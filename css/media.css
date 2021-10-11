@@ -1,0 +1,142 @@
+@media (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+
+    .select-cinema {
+        width: 100%;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 750px;
+    }
+
+    .session {
+        flex-wrap: wrap;
+    }
+
+    .session-date {
+        flex-basis: 70%;
+        margin-bottom: 40px;
+    }
+
+    .session-tame {
+        order: 2;
+    }
+
+    .session-cinema {
+        order: 3;
+    }
+
+    .menu-item {
+        margin-right: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 560px;
+    }
+
+    .m-menu {
+        display: block;
+        margin-left: 0;
+    }
+
+    .menu {
+        position: absolute;
+        background-color: #621402;
+        border-radius: 10px;
+        top: 40px;
+        left: 0;
+        flex-direction: column;
+        padding: 20px;
+        margin-left: 10px;
+        z-index: 100;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateX(-100%);
+        transition: .3s;
+    }
+
+    .menu-item {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .menu-item:last-child {
+        margin-bottom: 0;
+    }
+
+    .is-open {
+        opacity: 1;
+        visibility: visible;
+        transform: translateX(0);
+    }
+
+    .film-description {
+    	margin-right: 30px;
+    }
+
+    .film {
+    	flex-direction: column;
+    }
+
+    .film-trailer {
+    	margin-right: auto;
+    	margin-left: 0;
+    	margin-top: 40px;
+    }
+}
+
+@media (max-width: 468px) {
+	.legend {
+		flex-direction: column;
+		align-items: start;
+	}
+
+	.legend-label {
+		margin-right: 0;
+	}
+
+	.button {
+		padding: 20px 30px;
+		text-align: center;
+	}
+
+	.session-date-block {
+		width: 100%;
+		justify-content: space-around;
+	}
+
+	.session-date-item {
+		width: 60px;
+		height: 90px;
+	}
+
+	.session-date-item:last-child {
+		margin-right: 0;
+	}
+	.price {
+		flex-direction: column;
+	}
+
+	.price-tag {
+		font-size: 46px;
+		margin-bottom: 20px;
+	}
+
+	.session-time {
+		margin-bottom: 30px;
+	}
+
+	.session-label {
+		margin-bottom: 0;
+	}
+
+	.session-date-block {
+		margin-top: 16px;
+	}
+}
